@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de dados</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+        var algo = prompt('Write anything you want: ')
+        alert('Você digitou, ' + algo)
+        */
+        var namae = prompt('Qual o seu nome: ')
+        var n1 = Number.parseFloat(prompt(`Digite 1° número, ${namae}`))
+        var n2 = prompt('2° número: ')
+        var n3 = Number(n2)
+        var n4 = n1 + n3
+        document.write(`${namae.toUpperCase()}<br/>`) // Escreve na tela
+        document.write(`${namae.toLowerCase()}<br/>`)
+        document.write(`${namae.length}`)
+        alert(`A soma entre ${n1} + ${n3} é ${n4}`) // Para isso funcionar, use crase ``
+    </script>
+</body>
+</html>
