@@ -12,6 +12,20 @@
     </style>
 </head>
 <body>
+    <p>Para mudar uma variável,;<br>
+        <code>Number.parseInt(<em>O que vai ser variado</em>)</code>;<br>
+        <code>Number.parseFloat()</code>;<br>
+        <code>Number(<em>O que vai ser variado</em>) -> Converte o valor sozinho</code>;<br>
+        <code>String(<em>O que vai ser variado</em>)</code>;<br>
+        <code>(<em>O que vai ser variado</em>).toString</code></p>
+        <hr>
+        <p>Na teoria, é possível escreter <code>.writeln</code> para escrever e ir para a próxima linha, mas não está funcionando... testar depois.</p>
+        <hr>
+        <h2>Formatando números</h2>
+        <p>Para um Float ter mais de 1 casa decimal: <code><em>variável</em>.toFixed(Numero de casas)</code><br>
+        Mudar "." para ",": <code><em>variável</em>.replace('.', ',')</code></p>
+        <p>Para modificar o valor para um referente País: <code><em>variável</em>.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})</code></p>
+        <!--Nesse ultimo, troque o BRL para USD, EUR...-->
     <script>
         /*
         var algo = prompt('Write anything you want: ')

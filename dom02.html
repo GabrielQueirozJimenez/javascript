@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: gray;
+            color: white;
+            margin: auto;
+            line-height: 150px; /*VER COMO ISSO FUNCIONA...*/
+            text-align: center;
+            font-size: large;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-html" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <p>HERE</p>
+    </div>
+    <p>Interact with the &lt;div&gt; above, and see what happens.</p>
+    <h3>Trick</h3>
+    <p>Search for JavaScript DOM event list...<br>
+
+        mouseenter<br>
+        mousemove<br>
+        mousedown<br>
+        mouseup<br>
+        click<br>
+        mouseout<br>
+    </p>
+    <hr>
+    <h2>Event list By JavaScript</h2>
+    <p>Althought you make the declarations of functions on the HTML, you can turn it more simple, right on the script:
+        <code>variável.addEventListener('Event', function's name)</code>
+    
+        There is not necessary to put the '()' on this other way.
+    </p>
+    <div id="test-javascript">
+        <p>By JS</p>
+    </div>
+
+    <script>
+        document.querySelector('#test-javascript').addEventListener('click', clicou)
+        document.querySelector('#test-javascript').addEventListener('mouseenter', entrou)
+        document.querySelector('#test-javascript').addEventListener('mouseout', saiu)
+        //---------------------------------------------------------------------------
+        function clicar(){
+            document.querySelector('#test-html').innerText=('O mouse clicou!')
+            document.querySelector('#test-html').style.background = 'green'
+        }
+        function entrar(){
+            document.querySelector('#test-html').innerText='O mouse entrou!'
+            document.querySelector('#test-html').style.background='blue'
+        }
+        function sair(){
+            document.querySelector("#test-html").innerText="O mouse saiu!"
+            document.querySelector("#test-html").style.background="grey"
+        }
+        //---------------------------------------------------------------------------
+        function clicou(){
+            document.querySelector('#test-javascript').innerText=('O mouse clicou!')
+            document.querySelector('#test-javascript').style.background = 'purple'
+        }
+        function entrou(){
+            document.querySelector('#test-javascript').innerText='O mouse entrou!'
+            document.querySelector('#test-javascript').style.background='red'
+        }
+        function saiu(){
+            document.querySelector("#test-javascript").innerText="O mouse saiu!"
+            document.querySelector("#test-javascript").style.background="black"
+        }
+    </script>
+</body>
+</html>

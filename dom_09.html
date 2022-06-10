@@ -22,12 +22,46 @@
     <p>Não funciona no Node.js, mas sim, no navegador</p>
     <p>Lorem, ipsum <strong>sit amet consectetur</strong> adipisicing elit.</p>
     <div id='msg'>Click Here</div>
+    <hr>
+    <p>O <em>Dom</em> é a interação do JavaScript com o HTML e CSS, ajuda a modificar elementos do <em>HTML</em> e <em>CSS</em>.</p>
+    <h2>Seletores JavaScript</h2>
+    <P>E pode acessar os elementos por:
+        Marca (tag)
+            .getElementsByTagName('');
+            .getElementsByTagName('')[Qual você quer pegar (0, 1, 2, 3...)]
+                Pode pegar mais de um elemento.
+                variável<code>.innerText</code> -> Pega a <em>string e/ou o valor</em> dentro da variável.
+        ID
+            .getElementById();
+        Nome
+            .getElementsByName()[];
+                div name = 'Clap';
+            .getElementsByName('Clap').
+        Classe
+            .getElementByClassName();
+        Seletor
+            .querySelector();
+                Use a sintaxe do Css #(id) ou .(class)
+            .querySelectorAll();
+    </P>
+    <h2>JavaScript</h2>
+    <p>
+        p[0,1,2...].innerText --> Pega a string <strong>sem</strong> formatação;
+        p[0,1,2...].innerHTML --> Pega a string <strong>com</strong> formatação;
+        variável.style.background = 'crimnson'
+    </p>
+    <h2>HTML/CSS -> EcmaScript</h2>
+    <p>
+        &lt;p&gt; == document.write('');
+        style{color...} == document.style.color = 'grey';
+        style{background...} == document.background = 'grey'
+    </p>
     <script>
         /*
         var p1 = window.document.getElementsByTagName('p')[0] //0 = 1° paragrafo
         window.document.write('Teste para reproduzir: '+p1.innerText) // Vai escrever o que estiver no 1 paragrafo
         */
-        var p2 = window.document.getElementsByTagName('p')[1] // Quando tiver 's', especifique qual é ([0],[1],[2]...)
+        var p2 = window.document.getElementsByTagName('p')[1] // Quando estiver no plural 's', especifique qual é: [0],[1],[2]...
         p2.style.color = 'blue'
         window.document.write(p2.innerHTML)//HTML escreve até o negrito
         var pp = window.document.getElementById('msg')
