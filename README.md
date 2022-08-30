@@ -1,2 +1,2 @@
 # javascript
- Leaning JavaScript
+ Learning JavaScript
